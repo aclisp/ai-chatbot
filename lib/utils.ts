@@ -2,14 +2,12 @@ import type {
   CoreAssistantMessage,
   CoreToolMessage,
   Message,
-  TextStreamPart,
   ToolInvocation,
-  ToolSet,
 } from 'ai';
 import { type ClassValue, clsx } from 'clsx';
 import { twMerge } from 'tailwind-merge';
 
-import type { Message as DBMessage, Document } from '@/lib/db/schema';
+import type { Message as DBMessage, Document } from '@/lib/db/schema-sqlite';
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
